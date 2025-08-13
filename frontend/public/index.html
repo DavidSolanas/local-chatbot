@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Chatbot</title>
+    <link rel="icon" href="/static/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">🤖 Local Chatbot</div>
+        <div class="status" id="status">Ready</div>
+      </header>
+
+      <main class="chat">
+        <div id="messages" class="messages"></div>
+      </main>
+
+      <footer class="composer">
+        <form id="chat-form">
+          <textarea id="prompt" rows="1" placeholder="Send a message"></textarea>
+          <button id="send" type="submit">Send</button>
+        </form>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
